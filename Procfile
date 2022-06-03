@@ -1,1 +1,1 @@
-web: python manage.py runserver 0.0.0.0:\
+web: gunicorn deliver.wsgi:application --log-file -
